@@ -76,12 +76,18 @@ $comments .= '</div>';
 
 
 if (isset($_POST['lista'])) {
+
+
+    $results = array();
+
     $sql = "SELECT * FROM comments";
     $result = mysqli_query($conn, $sql);
 
-    $row = mysqli_fetch_array($result);
+    while ($row = mysqli_fetch_array($result)) {
+        $results = $row;
+    }
 
-    echo ($row);
+    echo json_encode($results);
 }
 
 ?>
