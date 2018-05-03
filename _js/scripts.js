@@ -31,7 +31,7 @@ $(document).ready(function () {
         alert('Saving');
 
         $.ajax({
-            url: '_server/server.php',
+            url: '_controller/ProductController.php',
             type: 'POST',
             data: {
                 'description': description,
