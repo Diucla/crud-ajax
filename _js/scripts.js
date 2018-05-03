@@ -1,32 +1,32 @@
 $(document).ready(function () {
 
-    $.ajax({
-        url: '_server/server.php',
-        type: 'POST',
-        data: {
-            'lista': 1,
-        },
-
-        success: function (response) {
-
-            alert("re"+response);
-
-            console.log(response);
-
-            // $(response).each(function (index) {
-            //     console.log(response);
-            // });
-
-            // response.each(function (element) {
-            //     console.log(element);
-            // });
-
-        }
-    });
-    // save comment to database
+    // $.ajax({
+    //     url: '_server/server.php',
+    //     type: 'POST',
+    //     data: {
+    //         'lista': 1,
+    //     },
+    //
+    //     success: function (response) {
+    //
+    //         alert("re"+response);
+    //
+    //         console.log(response);
+    //
+    //         // $(response).each(function (index) {
+    //         //     console.log(response);
+    //         // });
+    //
+    //         // response.each(function (element) {
+    //         //     console.log(element);
+    //         // });
+    //
+    //     }
+    // });
+    // save product to database
     $(document).on('click', '#submit_btn', function () {
-        var name = $('#name').val();
-        var comment = $('#comment').val();
+        var description = $('#description').val();
+        var price = $('#price').val();
 
         alert('Saving');
 
@@ -34,14 +34,15 @@ $(document).ready(function () {
             url: '_server/server.php',
             type: 'POST',
             data: {
-                'save': 1,
-                'name': name,
-                'comment': comment,
+                'description': description,
+                'price': price
             },
             success: function (response) {
-                $('#name').val('');
-                $('#comment').val('');
-                $('#display_area').append(response);
+
+                alert('done');
+                // $('#name').val('');
+                // $('#comment').val('');
+                // $('#display_area').append(response);
             }
         });
     });
