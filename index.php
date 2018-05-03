@@ -18,13 +18,17 @@
 
   <div class="col-md-6 offset-md-3">
 
-      <?php echo $comments; ?>
-
       <form>
           <div class="form-group">
-              <label for="name">Name</label>
+              <label for="name">Description:</label>
               <input type="text" class="form-control" id="name" placeholder="Type Name">
           </div>
+
+          <div class="form-group">
+              <label for="name">Description:</label>
+              <input type="text" class="form-control" id="name" placeholder="Type Name">
+          </div>
+
           <div class="form-group">
               <label for="comment">Comment</label>
               <textarea class="form-control" id="comment" rows="3"></textarea>
