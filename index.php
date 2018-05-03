@@ -39,18 +39,41 @@
       </form>
   </div>
 
-<!---->
-<!--<div class="list-group">-->
-<!--  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">-->
-<!--    <div class="d-flex w-100 justify-content-between">-->
-<!--      <h5 class="mb-1">List group item heading</h5>-->
-<!--      <small>3 days ago</small>-->
-<!--    </div>-->
-<!--    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>-->
-<!--    <small>Donec id elit non mi porta.</small>-->
-<!--  </a>-->
-<!--</div>-->
-<!--  -->
+  <div class="row">
+
+      <div class="col-md-6 offset-md-3">
+          <h4 class="mt-5">Produts</h4>
+          <table class="table table-sm" id="products-table">
+              <thead>
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Price</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+              </tr>
+              <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+
+              </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+
+
 
   <!-- Add JQuery -->
 

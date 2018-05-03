@@ -11,7 +11,7 @@
  *
  * @author Hercilio
  */
-class Conexao2 {
+class Conexao {
     
     
     private $database ;
@@ -19,19 +19,18 @@ class Conexao2 {
     private $pass;
     private $conection;
     
-    
-            function __construct() {
-        $this->database = "mysql:dbname=sistemarh;host=localhost";
+
+    function __construct() {
+        $this->database = "mysql:dbname=crud-ajax;host=localhost";
         $this->user = "root";
-        $this->pass =  "1234";
+        $this->pass =  "";
     }
 
 
     public function conectar(){
     
         try {
-
-             $conection = new PDO("mysql:dbname=sistemarh;host=localhost","root","1234");
+             $conection = new PDO("mysql:dbname=crud-ajax;host=localhost","root","");
              return $conection;
         } catch (PDOException $ex) {
             
